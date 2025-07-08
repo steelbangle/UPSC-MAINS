@@ -1,0 +1,5 @@
+{
+  "name": "UPSC Mains Answer Generator",
+  "description": "An AI-powered tool to generate high-quality, structured model answers for the UPSC Civil Services Mains Examination based on expert-defined prompts and principles.",
+  "requestFramePermissions": []
+}

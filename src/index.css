@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #111827; /* gray-900 */
+    --bg-secondary: #f9fafb; /* gray-50 */
+    --bg-tertiary: #ffffff;
+    --text-primary: #1f2937; /* gray-800 */
+    --text-secondary: #6b7280; /* gray-500 */
+    --text-light: #f9fafb;
+    --border-color: #e5e7eb; /* gray-200 */
+    --accent-color: #4f46e5; /* indigo-600 */
+    --accent-hover: #4338ca; /* indigo-700 */
+  }
+
+  body {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+}
+
+
+/* Prose output styling */
+.prose-output h3, .prose-output h4, .prose-output h5, .prose-output h6 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose-output h3 {
+  font-size: 1.25rem;
+}
+.prose-output h4 {
+  font-size: 1.125rem;
+}
+.prose-output p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+.prose-output ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.prose-output ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.prose-output li {
+    margin-bottom: 0.5rem;
+}
+.prose-output strong, .prose-output b {
+    font-weight: 700;
+    color: #374151; /* gray-700 */
+}
+.prose-output a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+.prose-output blockquote {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
